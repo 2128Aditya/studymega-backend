@@ -1,3 +1,4 @@
+console.log("authRoutes file loaded");
 import express from "express";
 import {
   createAdmin,
