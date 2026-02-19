@@ -1,4 +1,4 @@
-import Pdf from "../models/Pdf.js";
+import Pdf from "../models/pdf.js";
 
 // ✅ Add PDF (Admin Only)
 export const addPdf = async (req, res) => {

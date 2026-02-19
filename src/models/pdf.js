@@ -10,10 +10,8 @@ const pdfSchema = new mongoose.Schema(
     },
     subject: { type: String, default: "" },
     className: { type: String, default: "" },
-
     pdfUrl: { type: String, required: true },
     thumbnail: { type: String, default: "" },
-
     uploadedBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
@@ -22,5 +20,4 @@ const pdfSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Pdf = mongoose.model("Pdf", pdfSchema);
-export default Pdf;
+export default mongoose.models.Pdf || mongoose.model("Pdf", pdfSchema);
