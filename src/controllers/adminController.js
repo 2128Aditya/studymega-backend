@@ -1,5 +1,5 @@
 
-import Pdf from "../models/Pdf.js";
+import Pdf from "../models/pdf.js";
 import User from "../models/Users.js";
 
 export const getAdminStats = async (req, res) => {
